@@ -1,1 +1,116 @@
 <!-- write your code here -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Web | Portofolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <nav>
+          <ul>
+            <li><a onclick="changeValueAbout()" id="about">About</a></li>
+            <li>
+              <a onclick="changeValuePortofolio()" id="portofolio"
+                >Portofolio</a
+              >
+            </li>
+            <li><a onclick="changeValueBlog()" id="blog">Blog</a></li>
+            <li><a onclick="changeValueContact()" id="contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <main class="content">
+        <section class="hero">
+          <img
+          src=https://st3.depositphotos.com/15648834/17930/v/450/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg
+          alt="" />
+          <div class="hero-content">
+            <h1>Profession</h1>
+            <br />
+            <h2>Junior Programmer PT. Right There</h2>
+            <br /><br />
+            <p id="penjelasan">
+              ini page About Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Necessitatibus suscipit maxime nostrum neque obcaecati
+              voluptatum.
+            </p>
+            <a
+              onclick="changeValueProfile()"
+              class="action-btn"
+              onclick="changeValueProfile"
+              >Profile Saya</a
+            >
+          </div>
+        </section>
+      </main>
+      <div class="footer">
+        <footer>
+          <ul>
+            <li style="margin-bottom: 100px">Contact Me On</li>
+            <li>
+              <ion-icon class="logo" name="logo-instagram"></ion-icon>
+            </li>
+            <li>
+              <ion-icon class="logo" name="logo-facebook"></ion-icon>
+            </li>
+            <li>
+              <ion-icon class="logo" name="logo-twitter"></ion-icon>
+            </li>
+            <li>
+              <ion-icon class="logo" name="logo-github"></ion-icon>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="text/javascript">
+      function changeValueAbout() {
+        document.getElementById("penjelasan").innerHTML = `<p id="penjelasan">
+              ini page About Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Necessitatibus suscipit maxime nostrum neque obcaecati
+              voluptatum.
+            </p>`;
+      }
+      function changeValuePortofolio() {
+        document.getElementById("penjelasan").innerHTML = `<p id="penjelasan">
+              ini page Portofolio Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Necessitatibus suscipit maxime nostrum neque obcaecati
+              voluptatum.
+            </p>`;
+      }
+      function changeValueBlog() {
+        document.getElementById("penjelasan").innerHTML = `<p id="penjelasan">
+              ini page Blog Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Necessitatibus suscipit maxime nostrum neque obcaecati
+              voluptatum.
+            </p>`;
+      }
+      function changeValueContact() {
+        document.getElementById("penjelasan").innerHTML = `<p id="penjelasan">
+              ini page Contact Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Necessitatibus suscipit maxime nostrum neque obcaecati
+              voluptatum.
+            </p>`;
+      }
+      function changeValueProfile() {
+        document.getElementById("penjelasan").innerHTML = `<p id="penjelasan">
+              ini page Profile saya Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Necessitatibus suscipit maxime nostrum neque obcaecati
+              voluptatum.
+            </p>`;
+      }
+    </script>
+  </body>
+</html>
